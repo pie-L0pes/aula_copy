@@ -1,0 +1,187 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-09-09T16:01:43.121Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_agenda",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "agenda"
+    },
+    {
+      "_id": "fld_Usuario",
+      "_type": "request_group",
+      "parentId": "fld_agenda",
+      "name": "Usuario"
+    },
+    {
+      "_id": "req_Usuario_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/listar"
+    },
+    {
+      "_id": "req_Usuario_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/usuario/buscar/:id"
+    },
+    {
+      "_id": "req_Usuario_POST",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/usuario/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_PUT",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/usuario/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Usuario_DELETE",
+      "_type": "request",
+      "parentId": "fld_Usuario",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/usuario/excluir/:id"
+    },
+    {
+      "_id": "fld_Agendamento",
+      "_type": "request_group",
+      "parentId": "fld_agenda",
+      "name": "Agendamento"
+    },
+    {
+      "_id": "req_Agendamento_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Agendamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/agendamento/listar"
+    },
+    {
+      "_id": "req_Agendamento_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Agendamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/agendamento/buscar/:id"
+    },
+    {
+      "_id": "req_Agendamento_POST",
+      "_type": "request",
+      "parentId": "fld_Agendamento",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/agendamento/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"data\": \"string\",\n  \"horarioInicio\": \"string\",\n  \"horarioFim\": \"string\",\n  \"usuarioId\": 0,\n  \"criadoEm\": \"2026-09-09T16:01:43.114Z\"\n}"
+      }
+    },
+    {
+      "_id": "req_Agendamento_PUT",
+      "_type": "request",
+      "parentId": "fld_Agendamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/agendamento/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"data\": \"string\",\n  \"horarioInicio\": \"string\",\n  \"horarioFim\": \"string\",\n  \"usuarioId\": 0,\n  \"criadoEm\": \"2026-09-09T16:01:43.114Z\"\n}"
+      }
+    },
+    {
+      "_id": "req_Agendamento_DELETE",
+      "_type": "request",
+      "parentId": "fld_Agendamento",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/agendamento/excluir/:id"
+    }
+  ]
+}
