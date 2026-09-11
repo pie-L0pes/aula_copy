@@ -17,7 +17,7 @@ O sistema deverá verificar a data escolhida no momento do cadastro. Caso o usu�
 Depois de finalizar, testem o funcionamento do sistema, façam o commit das alterações e enviem a atividade pelo formulário:
 
 **Formulário de entrega:**  
-[(https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SxwFsZQ7q0GUQec6cjQv3VCsSvMmC0NBg7MzC75PWUxUMjI0MFJCQzJMRVRTRkZLOEdRRk1ZTUFQSy4u)]
+(https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SxwFsZQ7q0GUQec6cjQv3VCsSvMmC0NBg7MzC75PWUxUMjI0MFJCQzJMRVRTRkZLOEdRRk1ZTUFQSy4u)
 
 ## Objetivo
 
